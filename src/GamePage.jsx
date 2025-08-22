@@ -7,12 +7,14 @@ const GamePage = () => {
   const [clicksCount, setClicksCount] = useState(0);
   return (
     <div className="body-container">
+      <div className="title">
       <h1 className="text-3xl font-bold text-center">
         How good's your memory?
       </h1>
       <h2 className="text-center font-semibold text-2xl text-gray-700 ">
         Find all pairs in least time and with minimum clicks
       </h2>
+      </div>
         <div className="main-container">
         <MemoryBoard setScore={setScore} setClicksCount={setClicksCount} score={score}/>
         <ButtonsContainer clicksCount={clicksCount} score={score}/>

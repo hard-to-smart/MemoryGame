@@ -10,13 +10,23 @@
   align-items: center;
   justify-content: center;
   background-color: #494D5F;
+  width: 100vw;
+  height: 100vh;
 }
 h1{
   color: azure;
   margin: 10px;
+  bottom: 0;
 }
 h2{
   color: rgb(222, 222, 222);
+}
+.title{
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  height: 0vh;
 }
 .flip-card {
   background-color: transparent;
@@ -34,6 +44,7 @@ h2{
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 
 .flip-card-inner.flipped {
   transform: rotateY(180deg);
@@ -61,21 +72,26 @@ h2{
 }
 
 .grid-mapping{
-  width: fit-content;
+  width:fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 2px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 .main-container{
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
 }
 .buttons-container{
   display: flex;
   flex-direction: column;
+  align-self:center;
   gap: 5px;
-  align-items: center;
   font-size: large;
   color: gainsboro;
 }
